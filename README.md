@@ -3,8 +3,8 @@ VueJS 練習
 
 # Screenshots
 
-- 簡易計數器
-![image](https://github.com/ShengChih/Vue-example/blob/dev/screenshots/counter.png)
+- 簡易筆記管理
+![image](https://github.com/ShengChih/Vue-example/blob/dev/screenshots/notemanagement.png)
 
 ## License
 
