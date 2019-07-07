@@ -8,11 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Counter</title>
+    <title>Virtual DOM LifeCycle and Hooks</title>
   </head>
   <body>
     <div id="app">
-        <Counter v-bind:add-num="1"></Counter>
+      <div class="">
+        <span>Count: {{count}}</span>
+        <div>
+          <button class="btn btn-primary" v-on:click="increment">Increment</button>
+        </div>
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
