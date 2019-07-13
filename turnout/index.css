@@ -7,3 +7,12 @@
     color: #2C3350;
     margin-top: 60px;
 }
+
+input {
+    margin-bottom: 5px;
+    align-content: center;
+}
+
+.signin {
+    margin: 0px auto;
+}
