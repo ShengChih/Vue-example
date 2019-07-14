@@ -1,6 +1,6 @@
 <template>
     <div clase="form-inline row">
-        <h3>Sign In</h3>
+        <h3>Sign Up</h3>
         <div class="form-group col-md-3 sign-form">
             <input
                 type="text"
@@ -14,12 +14,12 @@
                 class="form-control"
                 v-model="password"
             />
-            <button class="btn btn-primary" v-on:click="signIn">Sign In</button>
+            <button class="btn btn-primary" v-on:click="signUp">Sign Up</button>
         </div>
         <br>
         <p>{{error.message}}</p>
         <br>
-        <router-link to="/signup">Not a user? Sign up</router-link>
+        <router-link to="/signin">Already a user? Sign in</router-link>
     </div>
 </template>
 
@@ -37,8 +37,8 @@ export default {
         }
     },
     methods: {
-        signIn() {
-            firebaseApp.auth().signInWithEmailAndPassword(this.email, this.password)
+        signUp() {
+            firebaseApp.auth().createUserWithEmailAndPassword(this.email, this.password)
                 .catch(error => {
                     this.error = error;
                 });
