@@ -16,3 +16,10 @@ input {
 .signin {
     margin: 0px auto;
 }
+
+.signout-btn {
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    right: 40px;
+}
